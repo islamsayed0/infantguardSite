@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infant Protection System - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background: #011043;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #333;
+        }
+        .answer {
+            display: none;
+            margin-top: 5px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>infant guard - FAQ</nav>
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="question">1. What is an Infant Protection System?</div>
+            <div class="answer">An Infant Protection System is a security solution designed to prevent infant abduction and unauthorized movement within hospitals.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">2. How does the system work?</div>
+            <div class="answer">The system uses Wi-Fi tags attached to infants, which communicate their real-time location to a local server and trigger alerts if unauthorized movement occurs.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">3. Is the system safe for infants?</div>
+            <div class="answer">Yes, the system uses non-invasive, lightweight, and medically safe devices that do not harm the infant.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">4. Can parents access the system?</div>
+            <div class="answer">Access is typically restricted to hospital staff, but some systems allow parents to receive notifications for added reassurance.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">5. What happens if a tag is removed?</div>
+            <div class="answer">If a tag is tampered with or removed, the system immediately triggers an alert to hospital security.</div>
+        </div>
+        <!-- Add more FAQ items up to 20 -->
+    </div>
+    <script>
+        document.querySelectorAll('.question').forEach(item => {
+            item.addEventListener('click', () => {
+                let answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
